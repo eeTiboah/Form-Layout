@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+
+<body>
+	<div class="page-show">
+		<div class="page">
+			<div class="text-center form-show">
+				<div>
+					<h3>Your form details is shown below</h3>
+				</div>
+					  <div>
+						<div>
+						  {{form.first_name.label}}: {{ session['firstName'] }}
+						 
+						</div>
+						<div>
+						  {{form.last_name.label}}: {{ session['lastName'] }}
+						</div>	
+					  </div>
+			
+					  <div>
+						<div>
+						  {{form.birthday.label}}: {{ session['birthday'] }}
+						</div>
+					   <div>
+						  {{ form.gender.label }}:  {{ session['gender'] }}
+						</div>	
+					  </div>
+			
+					  <div>
+						<div>
+						  {{ form.email.label }}: {{ session['email'] }}
+						  <div>
+							  
+						  </div>
+						  
+						</div>
+						<div>
+						  {{form.phone_number.label}}: {{ session['phone_number'] }}
+						  
+						</div>	
+					  </div>
+			
+					  <div>
+						   {{form.subject.label}}: {{ session['subject'] }}
+						   <div>
+						
+						</div>
+					  </div>
+			</div>
+			 
+		
+		
+			</div>
+		</div>	
+			
+	
+	</div>
+
+
+</body>
+</html>
+
+</html>
